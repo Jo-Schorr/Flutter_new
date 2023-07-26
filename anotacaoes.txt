@@ -1,0 +1,28 @@
+No contexto do desenvolvimento de aplicativos móveis usando o framework Flutter,
+ um "widget" é um dos principais conceitos e blocos de construção para criar a interface do usuário.
+  Os widgets podem representar elementos visuais, como botões, caixas de texto, imagens, ícones e muito mais.
+   Eles também podem ser usados para estruturar o layout da tela e organizar outros widgets.
+
+Vou explicar alguns
+
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text(
+        'SCHORR',
+        textDirection: TextDirection.rtl,
+      ),
+    );
+  }
+}
+Widget  Center == PAI VAI ESTAR AO CENTRO
+E SEU FILHO (child)  
+VAI SE AJUSTAR AO SEU PAI NO CENTRO
+
+====== widget Center =======
+       
+          child
+
+====== widge  Center =======
