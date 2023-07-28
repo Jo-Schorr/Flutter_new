@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
-class HomeController extends InheritedWidget {
-  HomeController({required super.child});
+class HomeController extends InheritedNotifier<ValueNotifier<int>> {
+  HomeController({
+    Key? key,
+    required Widget child,
+  }) : super(
+          key: key,
+          child: child,
+          notifier: ValueNotifier(0),
+        );
 
-  @override
-  bool updateShouldNotify(covariant InheritedWidget oldWidget) {
-    return false;
+  int get valeu => notifier!.value;
+  increment() {
+    notifier!.value++;
   }
 }
